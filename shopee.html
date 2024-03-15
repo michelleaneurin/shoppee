@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>shopee</title>
+</head>
+    <style>
+        body{
+            min-height: 200vh;
+            background-color:white;
+        }
+
+        nav{
+            position: sticky;
+            top: 0;
+            height: 140px;
+            background-color: orangered;
+            color: white;
+        }
+        
+        nav a{
+            color: white;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        section.content h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 100px;
+            
+        }
+ 
+        section.content form {
+            width: 800px;
+            /* background-color: yellowgreen; */
+            text-align:right;
+            margin: 30px auto;
+        }
+
+        section.content form div {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 5px 0px;
+            height: 36px;
+            background-color: white;
+        }
+ 
+        section.content form input[type=text] {
+            border: none;
+            outline: none;
+            width: 800px;
+            text-align: center center;
+        }
+ 
+        section.content form input[type=submit] {
+            height: 36px;
+            width: 36px;
+            /* background-color: magenta; */
+            border: none;
+            cursor: pointer;
+        }
+
+        .item1 { grid-area: menu;}
+        .item2 { grid-area: right;}
+        .item3 { grid-area: main;}
+
+        .grid-container {
+        display: grid;
+        grid-template-columns:80px 190px 10px;
+        grid-template-rows: 90px 100px 90px;
+        grid-template-areas:
+            'menu menu menu menu right right '
+            'menu menu menu menu main main ';
+        gap: 3px;
+        background-color: white;
+        padding: 20px ;
+        background-position: center;
+        background-size: cover;
+        }
+
+        .grid-container > div {
+        background-color: white;
+        padding:10px  0 ;
+        }
+
+        .menu{
+            font-size: smaller;
+            background-image: url(shopee.png);
+
+        }
+
+        .main{
+            background-image: url(shopee2.png);
+        }
+
+        .right{
+            background-image: url(shopee3.png);
+        }
+        
+        
+
+        
+    </style>
+
+<body>
+    
+    <nav>
+        <a href="#">Seller Center |</a>
+        <a href="#">Download |</a>
+        ikuti kami di 
+            <a href="#">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+            </a>
+        </div>
+
+     <section class="content">
+        <form action="https://www.google.com/search" target="_blank">
+            <div>
+                <span class="icon-search">🔎</span>
+                <input type="text" name="q" id="" placeholder="Search here">
+            </div>
+               
+        </form>
+        </section>
+    </nav>
+    
+
+    <div class="grid-container">
+        <div class="item1">
+            <img src="shopee.png" alt="foto shopee "height="200px">
+        </div>
+        <div class="item2">
+            <img src="shopee2.png" alt="foto "height="100px">
+        </div>
+        <div class="item3">
+            <img src="shopee3.png" alt="foto "height="100px" >
+        </div>
+    </div>
+    
+</body>
+</html>
